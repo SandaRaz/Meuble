@@ -1,0 +1,13 @@
+Nom des attributs d'une classe tsy maintsy private
+CRUD ihany no afaka anaovana Generalisation: Save(Insert),Delete,Find(Select),Update
+
+Liste signature des fonctions disponibles:
+INSERT:
+	public static int Save(Connection cnx, Object obj) throws Exception
+UPDATE:
+	public static int Update(Connection cnx, Object obj) throws Exception
+DELETE:
+	public static int Delete(Connection cnx, Object obj) throws Exception
+SELECT:
+	public static List<Object> FindById(Connection cnx, Object obj) throws Exception
+	public static List<Object> FindAll(Connection cnx, Object obj) throws Exception

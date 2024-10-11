@@ -1,0 +1,28 @@
+Liste des tables Postgres avec données:
+
+Categorie(id,nom)
+	nom: chaise,lit,table,armoire
+
+Style(id,nomStyle)
+	nomStyle: boheme,scandinave,royal,contemporaine,
+
+Matiere(id,nomMatiere)
+	nomMateriel: bois,platique,verre,metal,tissu,cuir,coton,eponge,vernis
+
+MatiereStyle(id,idStyle,idMatiere)
+	Explication: ny style iray manana liste matiere premiere maromaro midéfinir an'io style io,
+	Exemple: Rehefa style Boheme dia mampisasa bois sy tissu ary metal
+
+Volume(id,nomVolume,echelle)
+	nomVolume: xs, s, m, l, xl
+	echelle (pour trier): 1, 2, 3, 4,  5 
+
+Modele(id,idCategorie, idStyle, idVolume, prix)
+	Explication: Ireo karazana Meuble miexiste
+	Exemple: Chaise Boheme taille S
+
+QuantiteMatiereModele(id, idModele, idMatiere, quantite)
+	Exemple: Chaise Boheme taille S 	Chaise Boheme taille L
+				Bois: 4						Bois: 4
+				Metal: 2					Metal: 2
+				Tissu: 1					Tissu: 3

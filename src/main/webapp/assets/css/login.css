@@ -1,0 +1,178 @@
+body{
+    margin: 0px;
+    /* background-color: rgb(182, 182, 182); */
+}
+.sac{
+    width: 70%;
+    border-radius: 15px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0px 0px 15px;
+}
+.formulaire{
+    width: 100%;
+    display: flex;
+}
+.formulaire div{
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    z-index: 0;
+    height: 480px;
+    transition: all .5s ease-in-out;
+    animation-fill-mode: forwards;
+}
+@keyframes slide1_right {
+    0%{transform: translateX(0%);opacity: 1;}    
+    80%{transform: translateX(50%);opacity: 0;}
+    100%{display: none;}
+}
+@keyframes slide2_right {
+    0%{transform: translateX(-30%);display: flex;}    
+    100%{transform: translateX(0%);}    
+}
+@keyframes slide1_left {
+    0%{transform: translateX(0%);opacity: 1;}    
+    80%{transform: translateX(-50%);opacity: 0;}
+    100%{display: none;}
+}
+@keyframes slide2_left {
+    0%{transform: translateX(30%);display: flex;}    
+    100%{transform: translateX(0%);}    
+}
+.formulaire h2{
+    font-size: 35px;
+    color: black;
+    font-family: sans-serif;
+
+}
+form{
+    text-align: center;
+}
+form p{
+    background-color: rgb(238, 238, 238);
+    color: rgb(22, 156, 245);
+    padding: 15px;
+    font-size: 20px;
+    border-radius: 15px;
+    width: 100%;
+}
+form input{
+    color:black;
+    width: 200px;
+    /* margin-left: 5px; */
+    outline: none;
+    background-color: transparent;
+    border: none;
+}
+
+form input::placeholder{
+    color: grey;
+}
+
+form button{
+    margin-top: 15px;
+    background-color: rgb(22, 156, 245);
+    color: white;
+    border: none;
+    padding: 8px;
+    padding-left: 50px;
+    padding-right: 50px;
+    font-size: 18px;
+    border-radius: 50px;
+    transition: all .3s ease-in-out;
+}
+form button:hover{
+    color: rgb(22, 156, 245);
+    background-color: rgb(88, 88, 88);
+}
+form h3{
+    text-decoration: underline;
+    color: grey;
+    font-size: 25px;
+    cursor: pointer;
+    font-family: sans-serif;
+    transition: all .3s ease-in-out;
+}
+form h3:hover{
+    color: black;
+}
+#navigation{
+    background-color:rgb(22, 156, 245);
+    /* background-image: url(../background/image.gif); */
+    background-position: right;
+    background-size: cover;
+    position: absolute;
+    height: 480px;
+    z-index: 1;
+    width: 50%;
+    margin-left: 50%;
+    transition: all .5s ease-in-out;
+}
+#nav_rigth{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+    height: 480px;
+    background-color: rgba(0, 0, 0, 0.3);
+    text-align: center;
+    font-family: sans-serif;
+}
+#navigation div h1{
+    color: white;
+    font-size: 40px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    animation-fill-mode: forwards;
+}
+#navigation div h3{
+    padding: 10px;
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+    animation-fill-mode: forwards;
+}
+@keyframes fade1_rigth {
+    0%{transform: translate(0%);opacity: 1;}
+    100%{transform: translate(50%);opacity: 0;}
+}
+@keyframes fade1_left {
+    0%{transform: translate(-50%);opacity: 0;}
+    100%{transform: translate(0%);opacity: 1;}
+}
+
+@keyframes fade2_rigth {
+    0%{transform: translate(50%);opacity: 0;}
+    100%{transform: translate(0%);opacity: 1;}
+}
+@keyframes fade2_left {
+    0%{transform: translate(0%);opacity: 1;}
+    100%{transform: translate(-50%);opacity: 0;}
+}
+
+#navigation a{
+    text-decoration: none;
+    /* background-color: transparent; */
+    background-color: rgba(78, 78, 78, 0.418);
+    color: rgb(22, 156, 245);
+    border: none;
+    padding: 8px;
+    padding-left: 50px;
+    padding-right: 50px;
+    border-radius: 50px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: white;
+    transition: all .3s ease-in-out;
+}
+#navigation a:hover{
+    color:black;
+    background-color: rgba(255, 255, 255, 0.418);
+}
+#navigation a i{
+    display: none;
+    transition: all .3s ease-in-out;
+}
+#navigation a:hover i{
+    color: black;
+    display:contents;
+}
