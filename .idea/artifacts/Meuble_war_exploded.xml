@@ -1,0 +1,19 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" build-on-make="true" name="Meuble:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/Meuble_war_exploded</output-path>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="Meuble" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="GenericDAO" />
+          <element id="library" level="project" name="gson-2.8.2" />
+          <element id="library" level="project" name="postgresql-42.4.0" />
+          <element id="library" level="project" name="simpleController" />
+        </element>
+      </element>
+      <element id="javaee-facet-resources" facet="Meuble/web/Web" />
+    </root>
+  </artifact>
+</component>
